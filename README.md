@@ -18,7 +18,7 @@
 - 城市（暂时不支持展示）
 
 
-####查询示例
+查询示例
 
 **ES**
 ![Chinamap es](./src/imgs/chinamap-es.png)
