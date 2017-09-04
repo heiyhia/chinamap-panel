@@ -71,8 +71,6 @@ export class Controller extends MetricsPanelCtrl {
     }
 
     onDataError() {
-        this.xAxis = [];
-        this.seriesData = [];
         this.render(); // 渲染界面
     }
 
@@ -101,8 +99,6 @@ export class Controller extends MetricsPanelCtrl {
             chinaMap;
 
         function renderHandler(incrementRenderCounter) {
-            if (!ctrl.xAxis || !ctrl.seriesData) { return; }
-
             panel = ctrl.panel;
     
             let height = setElementHeight();

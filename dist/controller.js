@@ -143,8 +143,6 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                 }, {
                     key: 'onDataError',
                     value: function onDataError() {
-                        this.xAxis = [];
-                        this.seriesData = [];
                         this.render(); // 渲染界面
                     }
                 }, {
@@ -176,10 +174,6 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                             chinaMap = void 0;
 
                         function renderHandler(incrementRenderCounter) {
-                            if (!ctrl.xAxis || !ctrl.seriesData) {
-                                return;
-                            }
-
                             panel = ctrl.panel;
 
                             var height = setElementHeight();
