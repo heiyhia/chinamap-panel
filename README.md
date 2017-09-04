@@ -2,7 +2,7 @@
 
 基于Echarts2开发
 
-![Worldmap](https://raw.githubusercontent.com/grafana/worldmap-panel/54f83cfdc7339fee02df00933422c35630677330/src/images/worldmap-world.png)
+![Chinamap](./imgs/chinamap-china.png)
 
 
 ## 时间序列数据作为数据源
@@ -20,13 +20,12 @@
 
 ####查询示例
 
+**ES**
+![Chinamap es](./imgs/chinamap-es.png)
 
-Use the aliasByNode function to point to the field containing the country code. See the image below for an example of a graphite query.
+**Metrics**
+![Chinamap metrics](./imgs/chinamap-metrics.png)
 
-![Graphite Query for Countries](https://raw.githubusercontent.com/grafana/worldmap-panel/master/src/images/worldmap-timeseries-query.png)
+**China Map**
+![Chinamap cm](./imgs/chinamap-cm.png)
 
-
-
-### CHANGELOG
-
-The latest changes can be found here: [CHANGELOG.md](https://github.com/grafana/worldmap-panel/blob/master/CHANGELOG.md)
