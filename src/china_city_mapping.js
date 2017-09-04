@@ -211,14 +211,15 @@ export default function py2hz(location_name) {
 		'qinghai':'\u9752\u6d77',
 		'shandong':'\u5c71\u4e1c',
 		'shanxi':'\u9655\u897f',
-		'shanxi':'\u5c71\u897f',
 		'sichuan':'\u56db\u5ddd',
 		'taiwan':'\u53f0\u6e7e',
 		'xianggang':'\u9999\u6e2f',
 		'xinjiang':'\u65b0\u7586',
 		'xizang':'\u897f\u85cf',
 		'yunnan':'\u4e91\u5357',
-		'zhejiang':'\u6d59\u6c5f'
+		'zhejiang':'\u6d59\u6c5f',
+		'nei':'\u5185\u8499\u53e4',
+		'mongol':'\u5185\u8499\u53e4'
 	};
 
 	if (MAP.hasOwnProperty(location_name)){
