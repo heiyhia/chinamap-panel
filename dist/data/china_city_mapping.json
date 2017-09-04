@@ -187,5 +187,7 @@
 	u'tangshan': u'\u5510\u5c71',
 	u'zhangzhi': u'\u957f\u6cbb',
 	u'taiyuan': u'\u592a\u539f',
-	u'anshan': u'\u978d\u5c71'
+	u'anshan': u'\u978d\u5c71',
+	u'nei': u'\u5185\u8499\u53e4',
+	u'mongol': u'\u5185\u8499\u53e4'
 }
