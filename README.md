@@ -2,7 +2,7 @@
 
 基于Echarts2开发
 
-![Chinamap](./imgs/chinamap-china.png)
+![Chinamap](./src/imgs/chinamap-china.png)
 
 
 ## 时间序列数据作为数据源
@@ -21,11 +21,11 @@
 ####查询示例
 
 **ES**
-![Chinamap es](./imgs/chinamap-es.png)
+![Chinamap es](./src/imgs/chinamap-es.png)
 
 **Metrics**
-![Chinamap metrics](./imgs/chinamap-metrics.png)
+![Chinamap metrics](./src/imgs/chinamap-metrics.png)
 
 **China Map**
-![Chinamap cm](./imgs/chinamap-cm.png)
+![Chinamap cm](./src/imgs/chinamap-cm.png)
 
