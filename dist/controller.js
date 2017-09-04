@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/time_series2', './data_formatter', './libs/echarts', './libs/china'], function (_export, _context) {
+System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/time_series2', './data_formatter', 'echarts', 'china'], function (_export, _context) {
     "use strict";
 
     var MetricsPanelCtrl, _, kbn, TimeSeries, DataFormatter, echarts, china, _createClass, Controller;
@@ -46,10 +46,10 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
             TimeSeries = _appCoreTime_series.default;
         }, function (_data_formatter) {
             DataFormatter = _data_formatter.default;
-        }, function (_libsEcharts) {
-            echarts = _libsEcharts.default;
-        }, function (_libsChina) {
-            china = _libsChina.default;
+        }, function (_echarts) {
+            echarts = _echarts.default;
+        }, function (_china) {
+            china = _china.default;
         }],
         execute: function () {
             _createClass = function () {

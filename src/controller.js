@@ -5,8 +5,8 @@ import TimeSeries from 'app/core/time_series2';
 
 import DataFormatter from './data_formatter';
 
-import echarts from './libs/echarts';
-import china from './libs/china';
+import echarts from 'echarts';
+import china from 'china';
 
 export class Controller extends MetricsPanelCtrl {
     constructor($scope, $injector, $rootScope) {
