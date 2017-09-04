@@ -1,0 +1,23 @@
+{
+    "id": "chinamap-panel", 
+    "type": "panel",
+    "name": "China Map Panel",
+
+    "info": {
+        "description": "China Map Panel",
+        "author": {
+            "name": "Qiuwei",
+            "url": "https://github.com/heruihong/chinamap-panel"
+        },
+        "keywords": ["chinamap", "echarts", "panel", "grafana plugin"],
+        "logos": {
+            "small": "",
+            "large": ""
+        },
+        "version": "0.0.1"
+    },
+    "dependencies": {
+        "grafanaVersion": "4.1.x",
+        "plugins": []
+    }
+}
