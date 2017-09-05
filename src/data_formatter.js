@@ -149,7 +149,7 @@ export default class DataFormatter {
   }
 
   aggByProvince(data) {
-    if (!data || data.length == 0) return [];
+    // if (!data || data.length == 0) return [];
 
     let sum = (total, item) => total += item.value;
     let ret = _.chain(data)

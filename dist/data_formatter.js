@@ -174,7 +174,7 @@ System.register(['lodash', './geohash', './china_city_mapping'], function (_expo
         }, {
           key: 'aggByProvince',
           value: function aggByProvince(data) {
-            if (!data || data.length == 0) return [];
+            // if (!data || data.length == 0) return [];
 
             var sum = function sum(total, item) {
               return total += item.value;
