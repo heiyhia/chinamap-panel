@@ -2,7 +2,7 @@
 
 基于Echarts2开发
 
-![Chinamap](./src/imgs/chinamap-china.png)
+![Chinamap](./src/imgs/chinamap-china-v2.png)
 
 
 ## Grafana源码修改
