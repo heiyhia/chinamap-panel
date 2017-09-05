@@ -171,6 +171,20 @@ System.register(['lodash', './geohash', './china_city_mapping'], function (_expo
               data.valueRange = highestValue - lowestValue;
             }
           }
+        }, {
+          key: 'aggByProvince',
+          value: function aggByProvince(data) {
+            if (!data || data.length == 0) return [];
+
+            var sum = function sum(total, item) {
+              return total += item.value;
+            };
+            var ret = _.chain(data).groupBy('name').map(function (group, name) {
+              return { key: name, val: _.reduce(group, sum, 0) };
+            }).value();
+
+            return ret;
+          }
         }], [{
           key: 'tableHandler',
           value: function tableHandler(tableData) {

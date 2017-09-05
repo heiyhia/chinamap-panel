@@ -136,7 +136,7 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                         this.dataFormatter.setGeohashValues(dataList, data);
                         console.dir(data);
 
-                        this.data = data;
+                        this.data = this.dataFormatter.aggByProvince(data);
 
                         this.render();
                     }

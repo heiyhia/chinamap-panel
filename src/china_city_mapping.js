@@ -211,6 +211,7 @@ export default function py2hz(location_name) {
 		'qinghai':'\u9752\u6d77',
 		'shandong':'\u5c71\u4e1c',
 		'shanxi':'\u9655\u897f',
+		'shaanxi':'\u5c71\u897f',
 		'sichuan':'\u56db\u5ddd',
 		'taiwan':'\u53f0\u6e7e',
 		'xianggang':'\u9999\u6e2f',

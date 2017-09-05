@@ -65,7 +65,7 @@ export class Controller extends MetricsPanelCtrl {
         this.dataFormatter.setGeohashValues(dataList, data);
         console.dir(data);
      
-        this.data = data;
+        this.data = this.dataFormatter.aggByProvince(data);
 
         this.render();
     }
