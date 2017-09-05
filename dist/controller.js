@@ -105,12 +105,11 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                         esMetric: 'Count'
                     };
 
-                    console.dir(_this.panel);
                     _.defaults(_this.panel, optionDefaults);
                     _.defaults(_this.panel.legend, optionDefaults.legend);
 
                     _this.dataFormatter = new DataFormatter(_this, kbn);
-                    // this.loadLocationDataFromFile();
+
                     _this.events.on('render', _this.onRender.bind(_this));
                     _this.events.on('data-received', _this.onDataReceived.bind(_this));
                     _this.events.on('data-error', _this.onDataError.bind(_this));
@@ -129,13 +128,9 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                     key: 'onDataReceived',
                     value: function onDataReceived(dataList) {
                         if (!dataList) return;
-                        console.info('onDataReceived trigger');
-                        console.dir(dataList);
+
                         var data = [];
-
                         this.dataFormatter.setGeohashValues(dataList, data);
-                        console.dir(data);
-
                         this.data = this.dataFormatter.aggByProvince(data);
 
                         this.render();

@@ -38,12 +38,11 @@ export class Controller extends MetricsPanelCtrl {
             esMetric: 'Count',
         };
 
-        console.dir(this.panel);
         _.defaults(this.panel, optionDefaults);
         _.defaults(this.panel.legend, optionDefaults.legend);
 
         this.dataFormatter = new DataFormatter(this, kbn);
-        // this.loadLocationDataFromFile();
+        
         this.events.on('render', this.onRender.bind(this));
         this.events.on('data-received', this.onDataReceived.bind(this));
         this.events.on('data-error', this.onDataError.bind(this));
@@ -58,13 +57,9 @@ export class Controller extends MetricsPanelCtrl {
 
     onDataReceived(dataList) {
         if (!dataList) return;
-        console.info('onDataReceived trigger')
-        console.dir(dataList);
+
         const data  = [];
-        
         this.dataFormatter.setGeohashValues(dataList, data);
-        console.dir(data);
-     
         this.data = this.dataFormatter.aggByProvince(data);
 
         this.render();
