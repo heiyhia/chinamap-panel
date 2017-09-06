@@ -74,16 +74,6 @@ export class Controller extends MetricsPanelCtrl {
         this.unitFormats = kbn.getUnitFormats();
     }
 
-    seriesHandler(seriesData) {
-        const series = new TimeSeries({
-          datapoints: seriesData.datapoints,
-          alias: seriesData.target,
-        });
-
-        series.flotpairs = series.getFlotPairs(this.panel.nullPointMode);
-        return series;
-    }
-
     link(scope, elem, attrs, ctrl) {
         ctrl.events.on('render', () => {
             renderHandler(false);
@@ -119,7 +109,7 @@ export class Controller extends MetricsPanelCtrl {
 
                 elem.css('height', '500px');
                 elem.css('width', '800px');
-                
+
                 return height;
             } catch(e) { // IE throws errors sometimes
                 console.log('setElementHeight error......')

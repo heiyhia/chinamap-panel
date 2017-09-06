@@ -147,17 +147,6 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                         this.unitFormats = kbn.getUnitFormats();
                     }
                 }, {
-                    key: 'seriesHandler',
-                    value: function seriesHandler(seriesData) {
-                        var series = new TimeSeries({
-                            datapoints: seriesData.datapoints,
-                            alias: seriesData.target
-                        });
-
-                        series.flotpairs = series.getFlotPairs(this.panel.nullPointMode);
-                        return series;
-                    }
-                }, {
                     key: 'link',
                     value: function link(scope, elem, attrs, ctrl) {
                         ctrl.events.on('render', function () {
