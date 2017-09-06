@@ -164,8 +164,9 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                             renderHandler(false);
                         });
 
-                        var dom = elem.find('.chinamap'),
-                            panel = void 0,
+                        elem = elem.find('.chinamap');
+                        console.dir(elem);
+                        var panel = void 0,
                             chinaMap = void 0;
 
                         function renderHandler(incrementRenderCounter) {
@@ -173,8 +174,7 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
 
                             var height = setElementHeight();
                             if (height != 0) {
-                                if (!chinaMap) chinaMap = echarts.init(dom.get(0));
-
+                                chinaMap = echarts.init(elem.get(0));
                                 buildChart(height);
                             }
 
@@ -193,7 +193,8 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                                 height -= 5; // padding
                                 height -= panel.title ? 24 : 9; // subtract panel title bar
 
-                                dom.css('height', '500px');
+                                elem.css('height', '500px');
+                                elem.css('width', '800px');
 
                                 return height;
                             } catch (e) {

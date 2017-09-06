@@ -42,7 +42,7 @@ export class Controller extends MetricsPanelCtrl {
         _.defaults(this.panel.legend, optionDefaults.legend);
 
         this.dataFormatter = new DataFormatter(this, kbn);
-        
+
         this.events.on('render', this.onRender.bind(this));
         this.events.on('data-received', this.onDataReceived.bind(this));
         this.events.on('data-error', this.onDataError.bind(this));
@@ -89,18 +89,16 @@ export class Controller extends MetricsPanelCtrl {
             renderHandler(false);
         });
 
-        let dom = elem.find('.chinamap'),
-            panel, 
-            chinaMap;
+        elem = elem.find('.chinamap');
+        console.dir(elem);
+        let panel, chinaMap;
 
         function renderHandler(incrementRenderCounter) {
             panel = ctrl.panel;
     
             let height = setElementHeight();
             if (height != 0) {
-                if (!chinaMap)
-                    chinaMap = echarts.init(dom.get(0));
-
+                chinaMap = echarts.init(elem.get(0));
                 buildChart(height);
             } 
 
@@ -119,8 +117,9 @@ export class Controller extends MetricsPanelCtrl {
                 height -= 5; // padding
                 height -= panel.title ? 24 : 9; // subtract panel title bar
 
-                dom.css('height', '500px');
-
+                elem.css('height', '500px');
+                elem.css('width', '800px');
+                
                 return height;
             } catch(e) { // IE throws errors sometimes
                 console.log('setElementHeight error......')
