@@ -53,7 +53,6 @@ export default function py2hz(location_name) {
 		'zhangjiakou':'\u5f20\u5bb6\u53e3',
 		'chaozhou':'\u6f6e\u5dde',
 		'kunshan':'\u6606\u5c71',
-		'jilin':'\u5409\u6797',
 		'shouguang':'\u5bff\u5149',
 		'mudanjiang':'\u7261\u4e39\u6c5f',
 		'jining':'\u6d4e\u5b81',

@@ -3,25 +3,8 @@
 System.register([], function (_export, _context) {
 	"use strict";
 
-	function _defineProperty(obj, key, value) {
-		if (key in obj) {
-			Object.defineProperty(obj, key, {
-				value: value,
-				enumerable: true,
-				configurable: true,
-				writable: true
-			});
-		} else {
-			obj[key] = value;
-		}
-
-		return obj;
-	}
-
 	function py2hz(location_name) {
-		var _MAP;
-
-		var MAP = (_MAP = {
+		var MAP = {
 			'qinhuangdao': '\u79E6\u7687\u5C9B',
 			'beihai': '\u5317\u6D77',
 			'dongying': '\u4E1C\u8425',
@@ -75,7 +58,6 @@ System.register([], function (_export, _context) {
 			'zhangjiakou': '\u5F20\u5BB6\u53E3',
 			'chaozhou': '\u6F6E\u5DDE',
 			'kunshan': '\u6606\u5C71',
-			'jilin': '\u5409\u6797',
 			'shouguang': '\u5BFF\u5149',
 			'mudanjiang': '\u7261\u4E39\u6C5F',
 			'jining': '\u6D4E\u5B81',
@@ -225,8 +207,25 @@ System.register([], function (_export, _context) {
 			'hubei': '\u6E56\u5317',
 			'hunan': '\u6E56\u5357',
 			'jiangsu': '\u6C5F\u82CF',
-			'jiangxi': '\u6C5F\u897F'
-		}, _defineProperty(_MAP, 'jilin', '\u5409\u6797'), _defineProperty(_MAP, 'liaoning', '\u8FBD\u5B81'), _defineProperty(_MAP, 'neimenggu', '\u5185\u8499\u53E4'), _defineProperty(_MAP, 'ningxia', '\u5B81\u590F'), _defineProperty(_MAP, 'qinghai', '\u9752\u6D77'), _defineProperty(_MAP, 'shandong', '\u5C71\u4E1C'), _defineProperty(_MAP, 'shanxi', '\u9655\u897F'), _defineProperty(_MAP, 'shaanxi', '\u5C71\u897F'), _defineProperty(_MAP, 'sichuan', '\u56DB\u5DDD'), _defineProperty(_MAP, 'taiwan', '\u53F0\u6E7E'), _defineProperty(_MAP, 'xianggang', '\u9999\u6E2F'), _defineProperty(_MAP, 'xinjiang', '\u65B0\u7586'), _defineProperty(_MAP, 'xizang', '\u897F\u85CF'), _defineProperty(_MAP, 'yunnan', '\u4E91\u5357'), _defineProperty(_MAP, 'zhejiang', '\u6D59\u6C5F'), _defineProperty(_MAP, 'nei', '\u5185\u8499\u53E4'), _defineProperty(_MAP, 'mongol', '\u5185\u8499\u53E4'), _MAP);
+			'jiangxi': '\u6C5F\u897F',
+			'jilin': '\u5409\u6797',
+			'liaoning': '\u8FBD\u5B81',
+			'neimenggu': '\u5185\u8499\u53E4',
+			'ningxia': '\u5B81\u590F',
+			'qinghai': '\u9752\u6D77',
+			'shandong': '\u5C71\u4E1C',
+			'shanxi': '\u9655\u897F',
+			'shaanxi': '\u5C71\u897F',
+			'sichuan': '\u56DB\u5DDD',
+			'taiwan': '\u53F0\u6E7E',
+			'xianggang': '\u9999\u6E2F',
+			'xinjiang': '\u65B0\u7586',
+			'xizang': '\u897F\u85CF',
+			'yunnan': '\u4E91\u5357',
+			'zhejiang': '\u6D59\u6C5F',
+			'nei': '\u5185\u8499\u53E4',
+			'mongol': '\u5185\u8499\u53E4'
+		};
 
 		if (MAP.hasOwnProperty(location_name)) {
 			return MAP[location_name];
