@@ -16,7 +16,7 @@ Grafana前端模块化方案见[Systemjs](https://github.com/systemjs/systemjs);
 - 修改 `$GRAFANA_HOME/public/app/system.conf.js`
 	```javascript
 		...... 上面还有一堆配置 ......
-	"jquery.flot.fillbelow": "vendor/flot/jquery.flot.fillbelow",
+		"jquery.flot.fillbelow": "vendor/flot/jquery.flot.fillbelow",
 	    "jquery.flot.gauge": "vendor/flot/jquery.flot.gauge",
 	    "echarts": "vendor/echarts/echarts.min.js",
 	    "china": "vendor/echarts/china.js"
