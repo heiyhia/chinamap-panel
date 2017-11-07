@@ -182,8 +182,8 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
                                 height -= 5; // padding
                                 height -= panel.title ? 24 : 9; // subtract panel title bar
 
-                                elem.css('height', '500px');
-                                elem.css('width', '800px');
+                                elem.css('height', '350px');
+                                elem.css('width', '700px');
 
                                 return height;
                             } catch (e) {

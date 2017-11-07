@@ -6,7 +6,7 @@
     "info": {
         "description": "China Map Panel",
         "author": {
-            "name": "Qiuwei",
+            "name": "h2r",
             "url": "https://github.com/heruihong/chinamap-panel"
         },
         "keywords": ["chinamap", "echarts", "panel", "grafana plugin"],
